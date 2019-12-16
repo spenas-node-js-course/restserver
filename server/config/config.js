@@ -9,6 +9,19 @@ process.env.PORT = process.env.PORT || 3000;
 process.env.NODE_ENV = process.env.NODE_ENV || 'dev';
 
 
+//vencimiento del token
+//60 seg
+//60 min
+//24h
+//30 d
+
+process.env.CADUCIDAD_TOKEN = 60 * 60 * 24 * 30;
+
+
+//seed de autenticacion
+
+process.env.SEED = process.env.SEED || 'secreto'
+
 //base de datos
 
 let urlDB;
